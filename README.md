@@ -1,6 +1,6 @@
 ## hello world 👋 BarefootJoey here...
 <!--[![LinkedIn: BarefootJoey](https://img.shields.io/badge/LinkedIn-BarefootJoey-blue)](https://www.linkedin.com/in/barefoot-joey-84355a335/)-->
-[![Web](https://img.shields.io/badge/Site-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://www.tradingview.com/u/BarefootJoey/)
+[![Web](https://img.shields.io/badge/Website-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://www.tradingview.com/u/BarefootJoey/)
 [![Twitter](https://img.shields.io/twitter/follow/BarefootJoeyTV?style=social)](https://twitter.com/BarefootJoeyTV)
 [![TradingView](https://img.shields.io/badge/TradingView-%40barefootjoey-black?style=flat&logo=TradingView&logoColor=white)](https://barefootjoey.com)
 [![Telegram](https://img.shields.io/badge/Telegram-%40barefootjoey-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/barefootjoey)
