@@ -1,11 +1,12 @@
 ## hello world 👋 BarefootJoey here...
 <!--[![LinkedIn: BarefootJoey](https://img.shields.io/badge/LinkedIn-BarefootJoey-blue)](https://www.linkedin.com/in/barefoot-joey-84355a335/)-->
-[![Web: BarefootJoey](https://img.shields.io/badge/-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://barefootjoey.com)
-[![Twitter: BarefootJoey](https://img.shields.io/twitter/follow/BarefootJoeyTV?style=social)](https://twitter.com/BarefootJoeyTV)
-[![Telegram: BarefootJoey](https://img.shields.io/badge/-%40barefootjoey-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/barefootjoey)
-[![GitHub: BarefootJoey](https://img.shields.io/github/followers/BarefootJoey?label=follow&style=social)](https://github.com/BarefootJoey)
-[![Kaggle: BarefootJoey](https://img.shields.io/badge/-%40barefootjoey-0ba7e9?style=flat&logo=Kaggle&logoColor=white)](https://www.kaggle.com/barefootjoey)
-[![Donate](https://img.shields.io/badge/-Support-green.svg??style=flat&logo=CashApp&logoColor=white)]([https://paypal.me/amanatg](https://cash.app/$barefootjoey))
+[![Web](https://img.shields.io/badge/Site-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://www.tradingview.com/u/BarefootJoey/)
+[![Twitter](https://img.shields.io/twitter/follow/BarefootJoeyTV?style=social)](https://twitter.com/BarefootJoeyTV)
+[![TradingView](https://img.shields.io/badge/TradingView-%40barefootjoey-black?style=flat&logo=TradingView&logoColor=white)](https://barefootjoey.com)
+[![Telegram](https://img.shields.io/badge/Telegram-%40barefootjoey-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/barefootjoey)
+[![GitHub](https://img.shields.io/github/followers/BarefootJoey?label=follow&style=social)](https://github.com/BarefootJoey)
+[![Kaggle](https://img.shields.io/badge/Kaggle-%40barefootjoey-0ba7e9?style=flat&logo=Kaggle&logoColor=white)](https://www.kaggle.com/barefootjoey)
+[![Donate](https://img.shields.io/badge/Support-$barefootjoey-green.svg??style=flat&logo=CashApp&logoColor=white)]([https://paypal.me/amanatg](https://cash.app/$barefootjoey))
 <img src="https://komarev.com/ghpvc/?username=BarefootJoey" alt="BarefootJoey" />
 <!--[![Gmail: YourHandle](https://img.shields.io/badge/Gmail-youremail%40gmail.com-red)](mailto:youremail@gmail.com)-->
 
