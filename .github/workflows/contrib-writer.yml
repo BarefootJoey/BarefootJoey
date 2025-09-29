@@ -1,0 +1,60 @@
+name: Contribution Writer
+
+on:
+  schedule:
+    - cron: '7 9 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install structlog pydantic
+
+      - name: Run contribution writer
+        env:
+          TEXT: 'BAREFOOTJOEY'
+          START_SUNDAY: '2025-10-05'
+          COMMIT_FILE: 'contrib_log.txt'
+          SPACING_COLUMNS: '1'
+          FONT_WIDTH: '3'
+          FIT_WEEKS: '52'
+          MULTI_COMMITS: '50'
+        run: |
+          # First run computes whether today is a pixel day and appends the baseline line if needed
+          python contrib_writer/contrib_writer.py
+          # Intensify by multiple small commits if today is scheduled
+          for i in $(seq 1 ${MULTI_COMMITS}); do
+            echo "intensity=$i $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> intensity.txt
+            python contrib_writer/contrib_writer.py --mutation-token $i
+            git add -A
+            git commit -m "🔧 chore: intensity $i" || true
+          done
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "🔧 chore: contribution writer update"
+          git push
+
+
