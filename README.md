@@ -8,9 +8,9 @@
 
 <p align="center">
   <!-- Styles=flat-square, flat, for-the-badge, -->
-  <img src="https://img.shields.io/github/stars/barefootjoey/barefootjoey?style=flat&color=yellow" />
-  <img src="https://img.shields.io/github/forks/barefootjoey/barefootjoey?style=flat" />
-  <img src="https://img.shields.io/github/issues/barefootjoey/barefootjoey?style=flat&color=orange" />
+  <img src="https://img.shields.io/github/stars/BarefootJoey/BarefootJoey?style=flat&color=yellow" />
+  <img src="https://img.shields.io/github/forks/BarefootJoey/BarefootJoey?style=flat" />
+  <img src="https://img.shields.io/github/issues/BarefootJoey/BarefootJoey?style=flat&color=orange" />
 </p>
 
 <h1 align="center">👋 hello world</h1>
