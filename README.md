@@ -7,12 +7,13 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/barefootjoey/barefootjoey?style=for-the-badge" />
-  <img src="https://img.shields.io/github/forks/barefootjoey/barefootjoey?style=for-the-badge" />
-  <img src="https://img.shields.io/github/issues/barefootjoey/barefootjoey?style=for-the-badge" />
+  <!-- Styles=flat-square, flat, for-the-badge, -->
+  <img src="https://img.shields.io/github/stars/barefootjoey/barefootjoey?style=flat&color=yellow" />
+  <img src="https://img.shields.io/github/forks/barefootjoey/barefootjoey?style=flat" />
+  <img src="https://img.shields.io/github/issues/barefootjoey/barefootjoey?style=flat&color=orange" />
 </p>
 
-<h1 align="center">👋 hello world...</h1>
+<h1 align="center">👋 hello world</h1>
 
 [![Web](https://img.shields.io/badge/Website-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://barefootjoey.com)
 [![Telegram](https://img.shields.io/badge/Telegram-%40barefootjoey-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/barefootjoey)
@@ -92,9 +93,9 @@ Other descriptors: &margin-w=10&column=10 -->
 
 <!--<h4 align="left">Top Languages :tongue:</h4>-->
 <!-- Themes: chartreuse-dark, tokyonight -->
-<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=barefootjoey&theme=chartreuse-dark" alt="GitHub Streaks" title="Github Streaks"/></p>
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api?username=barefootjoey&theme=chartreuse-dark" alt="Github Stats" title="Github Stats"/></p>
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhellO&langs_count=10&theme=chartreuse-dark&layout=compact" alt="Github Languages" title="Github Languages"/></p>
+<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=barefootjoey&theme=chartreuse-dark" alt="GitHub Streaks" title="Github Streaks" /></p>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api?username=barefootjoey&theme=chartreuse-dark" alt="Github Stats" title="Github Stats" /></p>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhellO&langs_count=10&theme=chartreuse-dark&layout=compact" alt="Github Languages" title="Github Languages" /></p>
 
 <!--<br>
 <table align="center">
@@ -115,6 +116,10 @@ Other descriptors: &margin-w=10&column=10 -->
 </tr>
 </table>
 </section>-->
+
+<h3 align="center">This repo...</h3>
+
+
 
 <!--
 **BarefootJoey/BarefootJoey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
