@@ -117,10 +117,6 @@ Other descriptors: &margin-w=10&column=10 -->
 </table>
 </section>-->
 
-<h3 align="center">This repo...</h3>
-
-
-
 <!--
 **BarefootJoey/BarefootJoey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
