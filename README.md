@@ -1,19 +1,17 @@
-## 👋 hello world, BarefootJoey here...
-<!--[![LinkedIn: BarefootJoey](https://img.shields.io/badge/LinkedIn-BarefootJoey-blue)](https://www.linkedin.com/in/barefoot-joey-84355a335/)-->
+# 👋 hello world, BarefootJoey here...
+
 [![Web](https://img.shields.io/badge/Website-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://www.tradingview.com/u/BarefootJoey/)
 [![Telegram](https://img.shields.io/badge/Telegram-%40barefootjoey-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/barefootjoey)
 [![Twitter](https://img.shields.io/badge/Twitter-%40barefootjoey-black?style=flat&logo=X&logoColor=white)](https://t.me/barefootjoey)
 [![Kaggle](https://img.shields.io/badge/Kaggle-%40barefootjoey-0ba7e9?style=flat&logo=Kaggle&logoColor=white)](https://www.kaggle.com/barefootjoey)
 [![TradingView](https://img.shields.io/badge/TradingView-%40barefootjoey-black?style=flat&logo=TradingView&logoColor=white)](https://barefootjoey.com)
 [![Donate](https://img.shields.io/badge/Support-$barefootjoey-brighgreen.svg?style=flat&logo=CashApp&logoColor=white)](https://cash.app/$barefootjoey)
-<img src="https://komarev.com/ghpvc/?username=BarefootJoey&color=blue" alt="BarefootJoey" />
+<img src="https://komarev.com/ghpvc/?username=BarefootJoey&color=blue" alt="BarefootJoey"/>
 <!--[![Gmail: YourHandle](https://img.shields.io/badge/Gmail-youremail%40gmail.com-red)](mailto:youremail@gmail.com)
+[![LinkedIn: BarefootJoey](https://img.shields.io/badge/LinkedIn-BarefootJoey-blue)](https://www.linkedin.com/in/barefoot-joey-84355a335/)
 [![Github](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub+Followers&color=black&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dbarefootjoey&longCache=true")](https://github.com/BarefootJoey)
 [![Github Stars](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub+Stars&labelColor=282c34&color=181717&query=%24.data.totalStars&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dmadushadhanushka&longCache=true")](https://github.com/BarefootJoey)
 [![GitHub](https://img.shields.io/github/followers/BarefootJoey?label=follow&style=social)](https://github.com/BarefootJoey)
-[![Twitter](https://img.shields.io/twitter/follow/BarefootJoeyTV?style=social)](https://twitter.com/BarefootJoeyTV)-->
-
-<!--<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="40"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :)</em>-->
 
 <!--### Tech & Tools Preferences
 <img src="https://img.shields.io/badge/-Sass-cc6699?style=flat&logo=sass&logoColor=ffffff"> <img src="https://img.shields.io/badge/-React-000000?style=flat&logo=react&logoColor=00c8ff">
@@ -47,7 +45,6 @@
 <!--<img src="">-->
 
 <!--### 🛠️ Languages and Tools:
-
 ![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
 ![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
 ![Redux](https://img.shields.io/badge/-Redux-black?style=flat-square&logo=Redux)
@@ -78,16 +75,19 @@
 <!--Themes: chartreuse-dark, tokyonight-->
 
 <br>
-<table>
+<table align="center">
 <tr>
-  <td>
+  <td align="center">
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=barefootjoey&theme=chartreuse-dark" alt="GitHub Streaks" title="Github Streaks"/>  
-
   </td>
-  <td>
+</tr>
+<tr>
+  <td align="center">
       <img src="https://github-readme-stats.vercel.app/api?username=barefootjoey&theme=chartreuse-dark" alt="Github Stats" title="Github Stats"/> 
   </td>
-  <td>
+</tr>
+<tr>
+  <td align="center">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhellO&langs_count=10&theme=chartreuse-dark&layout=compact" alt="Github Languages" title="Github Languages"/>
   </td>
 </tr>
