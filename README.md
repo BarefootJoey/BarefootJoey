@@ -72,10 +72,27 @@
 ![Ubuntu](https://img.shields.io/badge/-Ubuntu-black?style=flat-square&logo=ubuntu)-->
 
 <!--<h4 align="left">Top Languages :tongue:</h4>-->
-<p align="left"><img src="https://github-readme-streak-stats.herokuapp.com/?user=barefootjoey&theme=chartreuse-dark" alt="mystreak"/></p> 
+<!--<p align="left"><img src="https://github-readme-streak-stats.herokuapp.com/?user=barefootjoey&theme=chartreuse-dark" alt="mystreak"/></p> 
 <p align="left"><img src="https://github-readme-stats.vercel.app/api?username=barefootjoey&theme=chartreuse-dark" alt="my Github Stats"/></p>
-<p align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhellO&langs_count=10&theme=chartreuse-dark&layout=compact" alt="AnhellO :: Top Langs" /></p> 
-<!--Themes: chartreuse-dark, tokyonight
+<p align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhellO&langs_count=10&theme=chartreuse-dark&layout=compact" alt="AnhellO :: Top Langs" /></p>-->
+<!--Themes: chartreuse-dark, tokyonight-->
+
+<br>
+<table>
+<tr>
+  <td>
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=barefootjoey&theme=chartreuse-dark" alt="GitHub Streaks" title="Github Streaks"/>  
+
+  </td>
+  <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=barefootjoey&theme=chartreuse-dark" alt="Github Stats" title="Github Stats"/> 
+  </td>
+  <td>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhellO&langs_count=10&theme=chartreuse-dark&layout=compact" alt="Github Languages" title="Github Languages"/>
+  </td>
+</tr>
+</table>
+</section>
 
 <!--
 **BarefootJoey/BarefootJoey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
