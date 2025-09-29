@@ -92,10 +92,11 @@ Other descriptors: &margin-w=10&column=10 -->
 ![Ubuntu](https://img.shields.io/badge/-Ubuntu-black?style=flat-square&logo=ubuntu)-->
 
 <!--<h4 align="left">Top Languages :tongue:</h4>-->
-<!-- Themes: chartreuse-dark, tokyonight -->
+<!-- Themes: dark, chartreuse-dark, radical, merko, gruvbox, tokyonight, onedark, cobalt, synthwave, highcontrast, dracula, etc -->
+<!-- All themes: https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md -->
 <p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=barefootjoey&theme=chartreuse-dark" alt="GitHub Streaks" title="Github Streaks" /></p>
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api?username=barefootjoey&theme=chartreuse-dark" alt="Github Stats" title="Github Stats" /></p>
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhellO&langs_count=10&theme=chartreuse-dark&layout=compact" alt="Github Languages" title="Github Languages" /></p>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api?username=barefootjoey&theme=chartreuse-dark&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" alt="Github Stats" title="Github Stats" /></p>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=barefootjoey&langs_count=10&theme=chartreuse-dark&layout=donut" alt="Github Languages" title="Github Languages" /></p>
 
 <!--<br>
 <table align="center">
