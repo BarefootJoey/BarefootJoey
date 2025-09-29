@@ -1,4 +1,4 @@
-# 👋 hello world, BarefootJoey here...
+<h1 align="center">👋 hello world, BarefootJoey here...</h1>
 
 [![Web](https://img.shields.io/badge/Website-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://www.tradingview.com/u/BarefootJoey/)
 [![Telegram](https://img.shields.io/badge/Telegram-%40barefootjoey-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/barefootjoey)
@@ -7,6 +7,7 @@
 [![TradingView](https://img.shields.io/badge/TradingView-%40barefootjoey-black?style=flat&logo=TradingView&logoColor=white)](https://barefootjoey.com)
 [![Donate](https://img.shields.io/badge/Support-$barefootjoey-brighgreen.svg?style=flat&logo=CashApp&logoColor=white)](https://cash.app/$barefootjoey)
 <img src="https://komarev.com/ghpvc/?username=BarefootJoey&color=blue" alt="BarefootJoey"/>
+
 <!--[![Gmail: YourHandle](https://img.shields.io/badge/Gmail-youremail%40gmail.com-red)](mailto:youremail@gmail.com)
 [![LinkedIn: BarefootJoey](https://img.shields.io/badge/LinkedIn-BarefootJoey-blue)](https://www.linkedin.com/in/barefoot-joey-84355a335/)
 [![Github](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub+Followers&color=black&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dbarefootjoey&longCache=true")](https://github.com/BarefootJoey)
@@ -69,12 +70,12 @@
 ![Ubuntu](https://img.shields.io/badge/-Ubuntu-black?style=flat-square&logo=ubuntu)-->
 
 <!--<h4 align="left">Top Languages :tongue:</h4>-->
-<!--<p align="left"><img src="https://github-readme-streak-stats.herokuapp.com/?user=barefootjoey&theme=chartreuse-dark" alt="mystreak"/></p> 
-<p align="left"><img src="https://github-readme-stats.vercel.app/api?username=barefootjoey&theme=chartreuse-dark" alt="my Github Stats"/></p>
-<p align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhellO&langs_count=10&theme=chartreuse-dark&layout=compact" alt="AnhellO :: Top Langs" /></p>-->
 <!--Themes: chartreuse-dark, tokyonight-->
+<p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=barefootjoey&theme=chartreuse-dark" alt="GitHub Streaks" title="Github Streaks"/></p>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api?username=barefootjoey&theme=chartreuse-dark" alt="Github Stats" title="Github Stats"/></p>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhellO&langs_count=10&theme=chartreuse-dark&layout=compact" alt="Github Languages" title="Github Languages"/></p>
 
-<br>
+<!--<br>
 <table align="center">
 <tr>
   <td align="center">
@@ -92,7 +93,7 @@
   </td>
 </tr>
 </table>
-</section>
+</section>-->
 
 <!--
 **BarefootJoey/BarefootJoey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
