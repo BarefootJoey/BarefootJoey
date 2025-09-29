@@ -1,8 +1,8 @@
 <h1 align="center">👋 hello world, BarefootJoey here...</h1>
 
-[![Web](https://img.shields.io/badge/Website-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://www.tradingview.com/u/BarefootJoey/)
+[![Web](https://img.shields.io/badge/Website-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://barefootjoey.com)
 [![Telegram](https://img.shields.io/badge/Telegram-%40barefootjoey-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/barefootjoey)
-[![Twitter](https://img.shields.io/badge/Twitter-%40barefootjoey-black?style=flat&logo=X&logoColor=white)](https://t.me/barefootjoey)
+[![Twitter](https://img.shields.io/badge/Twitter-%40barefootjoey-black?style=flat&logo=X&logoColor=white)](https://x.com/BarefootJoeyTV)
 [![Kaggle](https://img.shields.io/badge/Kaggle-%40barefootjoey-0ba7e9?style=flat&logo=Kaggle&logoColor=white)](https://www.kaggle.com/barefootjoey)
 [![TradingView](https://img.shields.io/badge/TradingView-%40barefootjoey-black?style=flat&logo=TradingView&logoColor=white)](https://www.tradingview.com/u/BarefootJoey/#published-scripts)
 [![Donate](https://img.shields.io/badge/Support-$barefootjoey-brighgreen.svg?style=flat&logo=CashApp&logoColor=white)](https://cash.app/$barefootjoey)
