@@ -1,14 +1,16 @@
 ## 👋 hello world, BarefootJoey here...
 <!--[![LinkedIn: BarefootJoey](https://img.shields.io/badge/LinkedIn-BarefootJoey-blue)](https://www.linkedin.com/in/barefoot-joey-84355a335/)-->
 [![Web](https://img.shields.io/badge/Website-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://www.tradingview.com/u/BarefootJoey/)
-[![Twitter](https://img.shields.io/twitter/follow/BarefootJoeyTV?style=social)](https://twitter.com/BarefootJoeyTV)
-[![TradingView](https://img.shields.io/badge/TradingView-%40barefootjoey-black?style=flat&logo=TradingView&logoColor=white)](https://barefootjoey.com)
 [![Telegram](https://img.shields.io/badge/Telegram-%40barefootjoey-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/barefootjoey)
-[![GitHub](https://img.shields.io/github/followers/BarefootJoey?label=follow&style=social)](https://github.com/BarefootJoey)
+[![Twitter](https://img.shields.io/badge/Twitter-%40barefootjoey-black?style=flat&logo=X&logoColor=white)](https://t.me/barefootjoey)
 [![Kaggle](https://img.shields.io/badge/Kaggle-%40barefootjoey-0ba7e9?style=flat&logo=Kaggle&logoColor=white)](https://www.kaggle.com/barefootjoey)
+[![TradingView](https://img.shields.io/badge/TradingView-%40barefootjoey-black?style=flat&logo=TradingView&logoColor=white)](https://barefootjoey.com)
 [![Donate](https://img.shields.io/badge/Support-$barefootjoey-green.svg??style=flat&logo=CashApp&logoColor=white)]([https://paypal.me/amanatg](https://cash.app/$barefootjoey))
+[![Github](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub+Followers&labelColor=282c34&color=181717&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dbarefootjoey&longCache=true")](https://github.com/BarefootJoey)
 <img src="https://komarev.com/ghpvc/?username=BarefootJoey" alt="BarefootJoey" />
-<!--[![Gmail: YourHandle](https://img.shields.io/badge/Gmail-youremail%40gmail.com-red)](mailto:youremail@gmail.com)-->
+<!--[![Gmail: YourHandle](https://img.shields.io/badge/Gmail-youremail%40gmail.com-red)](mailto:youremail@gmail.com)
+[![GitHub](https://img.shields.io/github/followers/BarefootJoey?label=follow&style=social)](https://github.com/BarefootJoey)
+[![Twitter](https://img.shields.io/twitter/follow/BarefootJoeyTV?style=social)](https://twitter.com/BarefootJoeyTV)-->
 
 <!--<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="40"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> :)</em>-->
 
@@ -69,7 +71,9 @@
 ![Ubuntu](https://img.shields.io/badge/-Ubuntu-black?style=flat-square&logo=ubuntu)-->
 
 <!--<h4 align="left">Top Languages :tongue:</h4>-->
-<p align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhellO&langs_count=10&theme=tokyonight&layout=compact" alt="AnhellO :: Top Langs" /></p>
+<p align="left"><img src="https://github-readme-streak-stats.herokuapp.com/?user=barefootjoey&theme=chartreuse-dark" alt="mystreak"/></p> 
+<p align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhellO&langs_count=10&theme=chartreuse-dark&layout=compact" alt="AnhellO :: Top Langs" /></p> 
+<!--Themes: chartreuse-dark, tokyonight
 
 <!--
 **BarefootJoey/BarefootJoey** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
