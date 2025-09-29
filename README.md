@@ -6,9 +6,10 @@
 [![Kaggle](https://img.shields.io/badge/Kaggle-%40barefootjoey-0ba7e9?style=flat&logo=Kaggle&logoColor=white)](https://www.kaggle.com/barefootjoey)
 [![TradingView](https://img.shields.io/badge/TradingView-%40barefootjoey-black?style=flat&logo=TradingView&logoColor=white)](https://barefootjoey.com)
 [![Donate](https://img.shields.io/badge/Support-$barefootjoey-brighgreen.svg?style=flat&logo=CashApp&logoColor=white)](https://cash.app/$barefootjoey)
-[![Github](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub+Followers&color=black&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dbarefootjoey&longCache=true")](https://github.com/BarefootJoey)
 <img src="https://komarev.com/ghpvc/?username=BarefootJoey&color=blue" alt="BarefootJoey" />
 <!--[![Gmail: YourHandle](https://img.shields.io/badge/Gmail-youremail%40gmail.com-red)](mailto:youremail@gmail.com)
+[![Github](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub+Followers&color=black&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dbarefootjoey&longCache=true")](https://github.com/BarefootJoey)
+[![Github Stars](https://img.shields.io/badge/dynamic/json?logo=github&label=GitHub+Stars&labelColor=282c34&color=181717&query=%24.data.totalStars&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3Dmadushadhanushka&longCache=true")](https://github.com/BarefootJoey)
 [![GitHub](https://img.shields.io/github/followers/BarefootJoey?label=follow&style=social)](https://github.com/BarefootJoey)
 [![Twitter](https://img.shields.io/twitter/follow/BarefootJoeyTV?style=social)](https://twitter.com/BarefootJoeyTV)-->
 
