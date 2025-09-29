@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/github/issues/barefootjoey/barefootjoey?style=for-the-badge" />
 </p>
 
-<h1 align="center">👋 hello world, BarefootJoey here...</h1>
+<h1 align="center">👋 hello world...</h1>
 
 [![Web](https://img.shields.io/badge/Website-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://barefootjoey.com)
 [![Telegram](https://img.shields.io/badge/Telegram-%40barefootjoey-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/barefootjoey)
