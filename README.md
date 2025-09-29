@@ -1,3 +1,17 @@
+<div align="center">
+
+<p align="center">
+  <a href="https://github.com/barefootjoey" target="_blank">
+    <img src="banner2.png" alt="Banner Constructor" width="800" />
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/barefootjoey/barefootjoey?style=for-the-badge" />
+  <img src="https://img.shields.io/github/forks/barefootjoey/barefootjoey?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues/barefootjoey/barefootjoey?style=for-the-badge" />
+</p>
+
 <h1 align="center">👋 hello world, BarefootJoey here...</h1>
 
 [![Web](https://img.shields.io/badge/Website-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://barefootjoey.com)
