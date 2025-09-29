@@ -1,5 +1,9 @@
 ## hello world 👋
 
+[![Twitter: BarefootJoey](https://img.shields.io/twitter/follow/BarefootJoeyTV?style=social)](https://twitter.com/BarefootJoeyTV)
+<!--[![Linkedin: BarefootJoey](https://img.shields.io/badge/-BarefootJoey-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thaianebraga/)](https://www.linkedin.com/in/BarefootJoey/)-->
+[![GitHub BarefootJoey](https://img.shields.io/github/followers/BarefootJoey?label=follow&style=social)](https://github.com/BarefootJoey)
+
 <h4 align="center">Top languages :tongue:</h4>
 
 <p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AnhellO&langs_count=10&theme=tokyonight&layout=compact" alt="AnhellO :: Top Langs" /></p>
