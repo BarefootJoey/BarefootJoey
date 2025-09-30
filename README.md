@@ -31,6 +31,7 @@
 [![Kaggle](https://img.shields.io/badge/Kaggle-%40barefootjoey-0ba7e9?style=flat&logo=Kaggle&logoColor=white)](https://www.kaggle.com/barefootjoey)
 [![TradingView](https://img.shields.io/badge/TradingView-%40barefootjoey-black?style=flat&logo=TradingView&logoColor=white)](https://www.tradingview.com/u/BarefootJoey/#published-scripts)
 [![Donate](https://img.shields.io/badge/Support-$barefootjoey-brighgreen.svg?style=flat&logo=CashApp&logoColor=white)](https://cash.app/$barefootjoey)
+[![wakatime](https://wakatime.com/badge/user/f55f2e09-e077-4371-a583-8d76367b844d.svg)](https://wakatime.com/@f55f2e09-e077-4371-a583-8d76367b844d)
 <img src="https://komarev.com/ghpvc/?username=BarefootJoey&color=blue" alt="BarefootJoey"/>
 
 <!-- Trophy Themes: juicyfresh, nord, 
