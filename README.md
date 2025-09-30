@@ -18,9 +18,11 @@
 
 <p align="center">
   <!-- Styles=flat-square, flat, for-the-badge, -->
+  <img src="https://komarev.com/ghpvc/?username=BarefootJoey&color=green" alt="BarefootJoey" />
   <img src="https://img.shields.io/github/stars/BarefootJoey/BarefootJoey?style=flat&color=yellow" />
   <img src="https://img.shields.io/github/forks/BarefootJoey/BarefootJoey?style=flat" />
   <img src="https://img.shields.io/github/issues/BarefootJoey/BarefootJoey?style=flat&color=orange" />
+  
 </p>
 
 <h1 align="center">👋 hello world</h1>
@@ -34,7 +36,7 @@ Welcome to my GitHub, where you can find the collection of my open-sourced proje
 [![TradingView](https://img.shields.io/badge/TradingView-%40barefootjoey-black?style=flat&logo=TradingView&logoColor=white)](https://www.tradingview.com/u/BarefootJoey/#published-scripts)
 [![Donate](https://img.shields.io/badge/Support-$barefootjoey-brighgreen.svg?style=flat&logo=CashApp&logoColor=white)](https://cash.app/$barefootjoey)
 [![wakatime](https://wakatime.com/badge/user/f55f2e09-e077-4371-a583-8d76367b844d.svg?color=000000)](https://wakatime.com/@f55f2e09-e077-4371-a583-8d76367b844d)
-<img src="https://komarev.com/ghpvc/?username=BarefootJoey&color=blue" alt="BarefootJoey"/>
+
 
 <!-- Trophy Themes: juicyfresh, nord, 
 Other descriptors: &margin-w=10&column=10 -->
