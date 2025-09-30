@@ -22,7 +22,6 @@
   <img src="https://img.shields.io/github/stars/BarefootJoey/BarefootJoey?style=flat&color=yellow" />
   <img src="https://img.shields.io/github/forks/BarefootJoey/BarefootJoey?style=flat" />
   <img src="https://img.shields.io/github/issues/BarefootJoey/BarefootJoey?style=flat&color=orange" />
-  
 </p>
 
 <h1 align="center">👋 hello world</h1>
