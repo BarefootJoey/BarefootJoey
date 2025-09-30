@@ -25,7 +25,7 @@
 
 <h1 align="center">👋 hello world</h1>
 
-Welcome to my GitHub, where you can find the collection of my open-sourced projects. Don't forget to star this repo if you like it, or fork this repo if you want your own GitHub profile README.md with working contribution graph text rendering automation.
+Welcome to my GitHub, where you can find the collection of my open-sourced projects. Don't forget to star this repo if you like it, or fork this repo if you want your own GitHub profile README.md with contribution graph text rendering automation.
 
 [![Web](https://img.shields.io/badge/Website-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://barefootjoey.com)
 [![Telegram](https://img.shields.io/badge/Telegram-%40barefootjoey-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/barefootjoey)
