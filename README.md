@@ -24,6 +24,10 @@
   <img src="https://img.shields.io/github/issues/BarefootJoey/BarefootJoey?style=flat&color=orange" />
 </p>
 
+<a href = "https://github.com/BarefootJoey/BarefootJoey/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo=BarefootJoey/BarefootJoey"/>
+</a>
+
 <h1 align="center">👋 hello world</h1>
 
 Welcome to my GitHub, where you can find the collection of my open-sourced projects. Please don't forget to star this repo if you like it, or fork this repo if you want your own similar GitHub profile README.md with contribution graph text rendering automation.
