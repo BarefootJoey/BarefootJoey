@@ -6,7 +6,7 @@ Plan and render text on your GitHub contributions graph by creating commits only
 Files
 - `contrib_writer.py`: CLI tool to plan/preview and mutate a file on scheduled days
 - `.github/workflows/contrib-writer.yml`: CI workflow to run daily and push commits
-- `contrib_log.txt` (in repo root): append-only file mutated to trigger commits
+- `contrib_writer/contrib_log.txt`: append-only file mutated to trigger commits
 
 Requirements (local)
 - Python 3.10+
@@ -26,7 +26,7 @@ Key options
 - `--preview`: print ASCII preview and exit
 - `--preview-weeks`: clamp preview to N week columns (default: 52)
 - `--list-dates`: when previewing, list all scheduled dates
-- `--commit-file`: file to mutate on scheduled days (default: contrib_log.txt in repo root)
+- `--commit-file`: file to mutate on scheduled days (default: contrib_writer/contrib_log.txt)
 - `--mutation-token`: arbitrary token to force unique lines when doing multiple commits in a loop
 
 Environment variables (equivalents)
@@ -35,11 +35,33 @@ Environment variables (equivalents)
 Preview examples
 - 52-week preview, width auto-fit:
 ```powershell
-(venv) python contrib_writer/contrib_writer.py --preview --fit-weeks 52 --preview-weeks 52 --text "BAREFOOTJOEY" --spacing 1 --start-sunday 2025-10-05
+(venv) python contrib_writer/contrib_writer.py --preview --fit-weeks 52 --preview-weeks 52 --text "TRADINGVIEW" --spacing 1 --start-sunday 2025-10-05
+
+# Example Output:
+{"total_pixels": 141, "start_sunday": "2025-10-05", "today": "2025-10-06", "event": "schedule_generated", "level": "info", "timestamp": "2025-10-06T20:21:42.030982Z"}
+Start Sunday: 2025-10-05  Weeks: 47  Height: 7
+██···█··██··███·███··█···█··███·███··█··███·█·█
+█·█·█·█·█·█·█···█···█·█·█·█··█····█·█·█·█···█·█
+█·█·█·█·█·█·█···█···█·█·█·█··█····█·█·█·█····█·
+██··███·██··██··██··█·█·█·█··█····█·█·█·██···█·
+█·█·█·█·██··█···█···█·█·█·█··█··█·█·█·█·█····█·
+█·█·█·█·█·█·█···█···█·█·█·█··█··█·█·█·█·█····█·
+██··█·█·█·█·███·█····█···█···█···█···█··███··█·
 ```
 - 52-week preview, force 3-column glyphs:
 ```powershell
 (venv) python contrib_writer/contrib_writer.py --preview --preview-weeks 52 --font-width 3 --text "BAREFOOTJOEY" --spacing 1 --start-sunday 2025-10-05
+
+# Example Output:
+{"total_pixels": 141, "start_sunday": "2025-10-05", "today": "2025-10-06", "event": "schedule_generated", "level": "info", "timestamp": "2025-10-06T20:19:49.712836Z"}
+Start Sunday: 2025-10-05  Weeks: 47  Height: 7
+██···█··██··███·███··█···█··███·███··█··███·█·█
+█·█·█·█·█·█·█···█···█·█·█·█··█····█·█·█·█···█·█
+█·█·█·█·█·█·█···█···█·█·█·█··█····█·█·█·█····█·
+██··███·██··██··██··█·█·█·█··█····█·█·█·██···█·
+█·█·█·█·██··█···█···█·█·█·█··█··█·█·█·█·█····█·
+█·█·█·█·█·█·█···█···█·█·█·█··█··█·█·█·█·█····█·
+██··█·█·█·█·███·█····█···█···█···█···█··███··█·
 ```
 - List all dates alongside the preview:
 ```powershell
@@ -68,7 +90,7 @@ Defaults set in the workflow step env:
 - `FONT_WIDTH='3'`, `FIT_WEEKS='52'`
 - `MULTI_COMMITS='50'` (number of intensity commits)
 
-In CI, it performs one planning run and then loops `MULTI_COMMITS` times, writing to `intensity.txt` and calling the script with `--mutation-token $i` to ensure unique diffs, committing each iteration, and pushing at the end.
+In CI, it performs one planning run and then loops `MULTI_COMMITS` times, writing to `contrib_writer/intensity.txt` and calling the script with `--mutation-token $i` to ensure unique diffs, committing each iteration, and pushing at the end.
 
 Fonts
 - Primary font is 5x7 per-letter bitmaps

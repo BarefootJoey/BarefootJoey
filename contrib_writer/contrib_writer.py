@@ -18,7 +18,7 @@ class Settings(BaseModel):
         default=None,
         description="Leftmost Sunday (YYYY-MM-DD). If not a Sunday, it will be shifted back to the previous Sunday. Defaults to last Sunday from today.",
     )
-    commit_file: str = Field(default="contrib_log.txt", description="Path to file to mutate for commits")
+    commit_file: str = Field(default="contrib_writer/contrib_log.txt", description="Path to file to mutate for commits")
     spacing_columns: int = Field(default=1, ge=0, le=3, description="Blank week columns between characters")
 
     @field_validator("text")
@@ -386,7 +386,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
         default=os.getenv("START_SUNDAY", None),
         help="Leftmost Sunday YYYY-MM-DD (defaults to env START_SUNDAY or last Sunday)",
     )
-    parser.add_argument("--commit-file", default=os.getenv("COMMIT_FILE", None), help="File to mutate (defaults to env COMMIT_FILE or contrib_log.txt)")
+    parser.add_argument("--commit-file", default=os.getenv("COMMIT_FILE", None), help="File to mutate (defaults to env COMMIT_FILE or contrib_writer/contrib_log.txt)")
     parser.add_argument("--spacing", type=int, default=os.getenv("SPACING_COLUMNS", None), help="Blank week columns between characters (default 1)")
     parser.add_argument("--preview", action="store_true", help="Show ASCII preview and exit")
     parser.add_argument("--list-dates", action="store_true", help="When previewing, list all scheduled dates")
@@ -402,7 +402,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     settings = Settings(
         text=args.text or "BAREFOOTJOEY",
         start_sunday=args.start_sunday,
-        commit_file=args.commit_file or "contrib_log.txt",
+        commit_file=args.commit_file or "contrib_writer/contrib_log.txt",
         spacing_columns=int(args.spacing) if args.spacing is not None else 1,
     )
     # Determine font width: explicit beats fit-weeks; else default 5

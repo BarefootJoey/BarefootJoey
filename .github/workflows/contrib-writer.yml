@@ -37,7 +37,7 @@ jobs:
         env:
           TEXT: 'BAREFOOTJOEY'
           START_SUNDAY: '2025-10-05'
-          COMMIT_FILE: 'contrib_log.txt'
+          COMMIT_FILE: 'contrib_writer/contrib_log.txt'
           SPACING_COLUMNS: '1'
           FONT_WIDTH: '3'
           FIT_WEEKS: '52'
@@ -47,7 +47,7 @@ jobs:
           python contrib_writer/contrib_writer.py
           # Intensify by multiple small commits if today is scheduled
           for i in $(seq 1 ${MULTI_COMMITS}); do
-            echo "intensity=$i $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> intensity.txt
+            echo "intensity=$i $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> contrib_writer/intensity.txt
             python contrib_writer/contrib_writer.py --mutation-token $i
             git add -A
             git commit -m "🔧 chore: intensity $i" || true
