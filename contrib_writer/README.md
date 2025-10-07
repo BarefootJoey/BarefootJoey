@@ -14,14 +14,15 @@ Requirements (local)
 
 CLI Usage
 ```powershell
-(venv) python contrib_writer/contrib_writer.py [--preview] [--list-dates] [--text TEXT] [--start-sunday YYYY-MM-DD] [--spacing N] [--font-width 3|4|5] [--fit-weeks N] [--preview-weeks N] [--commit-file PATH] [--mutation-token TOKEN]
+(venv) python contrib_writer/contrib_writer.py [--preview] [--list-dates] [--text TEXT] [--start-sunday YYYY-MM-DD] [--spacing N] [--font-width 3|4|5] [--font-height 5|7] [--fit-weeks N] [--preview-weeks N] [--commit-file PATH] [--mutation-token TOKEN]
 ```
 
 Key options
 - `--text`: message to draw (default: BAREFOOTJOEY)
 - `--start-sunday`: leftmost Sunday (YYYY-MM-DD). If not a Sunday, it auto-adjusts back to the previous Sunday
 - `--spacing`: blank week columns between letters (default: 1)
-- `--font-width`: compress letters to width 3/4/5 columns. Width 3 uses a handcrafted 3x7 font for letters in "BAREFOOTJOEY" to preserve shapes
+- `--font-width`: compress letters to width 3/4/5 columns. Width 3 uses a handcrafted 3x7 font where available to preserve shapes
+- `--font-height`: compress letters vertically to 5 or 7 rows. Height 5 centers glyphs within the 7-row (Sun..Sat) canvas
 - `--fit-weeks`: auto-pick a font width to fit within N weeks (uses spacing)
 - `--preview`: print ASCII preview and exit
 - `--preview-weeks`: clamp preview to N week columns (default: 52)
@@ -35,18 +36,18 @@ Environment variables (equivalents)
 Preview examples
 - 52-week preview, width auto-fit:
 ```powershell
-(venv) python contrib_writer/contrib_writer.py --preview --fit-weeks 52 --preview-weeks 52 --text "TRADINGVIEW" --spacing 1 --start-sunday 2025-10-05
+(venv) python contrib_writer/contrib_writer.py --preview --fit-weeks 52 --preview-weeks 52 --text "GITHUB" --spacing 1 --start-sunday 2025-10-05
 
 # Example Output:
-{"total_pixels": 141, "start_sunday": "2025-10-05", "today": "2025-10-06", "event": "schedule_generated", "level": "info", "timestamp": "2025-10-06T20:21:42.030982Z"}
-Start Sunday: 2025-10-05  Weeks: 47  Height: 7
-██···█··██··███·███··█···█··███·███··█··███·█·█
-█·█·█·█·█·█·█···█···█·█·█·█··█····█·█·█·█···█·█
-█·█·█·█·█·█·█···█···█·█·█·█··█····█·█·█·█····█·
-██··███·██··██··██··█·█·█·█··█····█·█·█·██···█·
-█·█·█·█·██··█···█···█·█·█·█··█··█·█·█·█·█····█·
-█·█·█·█·█·█·█···█···█·█·█·█··█··█·█·█·█·█····█·
-██··█·█·█·█·███·█····█···█···█···█···█··███··█·
+{"total_pixels": 91, "start_sunday": "2025-10-05", "today": "2025-10-06", "event": "schedule_generated", "level": "info", "timestamp": "2025-10-06T21:13:12.668510Z"}
+Start Sunday: 2025-10-05  Weeks: 35  Height: 7
+·███···███··█████·█···█·█···█·████·
+█···█···█·····█···█···█·█···█·█···█
+█·······█·····█···█···█·█···█·█···█
+█·███···█·····█···█████·█···█·████·
+█···█···█·····█···█···█·█···█·█···█
+█···█···█·····█···█···█·█···█·█···█
+·███···███····█···█···█··███··████·
 ```
 - 52-week preview, force 3-column glyphs:
 ```powershell
@@ -63,9 +64,29 @@ Start Sunday: 2025-10-05  Weeks: 47  Height: 7
 █·█·█·█·█·█·█···█···█·█·█·█··█··█·█·█·█·█····█·
 ██··█·█·█·█·███·█····█···█···█···█···█··███··█·
 ```
+- 3x5 glyphs (width=3, height=5), vertically centered:
+```powershell
+(venv) python contrib_writer/contrib_writer.py --preview --preview-weeks 52 --font-width 3 --font-height 5 --text "BAREFOOTJOEY" --spacing 1 --start-sunday 2025-10-05
+```
 - List all dates alongside the preview:
 ```powershell
-(venv) python contrib_writer/contrib_writer.py --preview --list-dates --preview-weeks 52 --font-width 3 --text "BAREFOOTJOEY" --spacing 1 --start-sunday 2025-10-05
+(venv) python contrib_writer/contrib_writer.py --preview --list-dates --preview-weeks 52 --font-width 3 --text "README" --spacing 1 --start-sunday 2025-10-05
+
+# Example Output: 
+{"total_pixels": 82, "start_sunday": "2025-10-05", "today": "2025-10-06", "event": "schedule_generated", "level": "info", "timestamp": "2025-10-06T21:18:58.732853Z"}
+Start Sunday: 2025-10-05  Weeks: 23  Height: 7
+██··███··█··██··█·█·███
+█·█·█···█·█·█·█·███·█··
+█·█·█···█·█·█·█·███·█··
+██··██··███·█·█·█·█·██·
+██··█···█·█·█·█·█·█·█··
+█·█·█···█·█·█·█·█·█·█··
+█·█·███·█·█·██··█·█·███
+2025-10-05 col=0 row=0
+2025-10-06 col=0 row=1
+2025-10-07 col=0 row=2
+2025-10-08 col=0 row=3
+...
 ```
 
 Intensity (commit multiples)
@@ -93,8 +114,9 @@ Defaults set in the workflow step env:
 In CI, it performs one planning run and then loops `MULTI_COMMITS` times, writing to `contrib_writer/intensity.txt` and calling the script with `--mutation-token $i` to ensure unique diffs, committing each iteration, and pushing at the end.
 
 Fonts
-- Primary font is 5x7 per-letter bitmaps
-- A compact handcrafted 3x7 font exists for characters used in "BAREFOOTJOEY" (preserves shapes like `Y`). For other characters at width 3, the script falls back to column-compression which may alter diagonals
+- Primary font is 5x7 per-letter bitmaps (A–Z supported)
+- A compact handcrafted 3x7 font exists for uppercase A–Z (with care for letters like `Y`). Width 3 uses these where defined; widths 4–5 use native 5x7 shapes or column-compressed variants
+- All letter templates now live in `contrib_writer/fonts.py`
 
 Notes
 - Columns map to weeks left→right, rows map to weekdays top→bottom (Sun..Sat)

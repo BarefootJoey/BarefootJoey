@@ -1,9 +1,17 @@
+# ██████████████████████████████████████████████████████████████████████
+# █▄─▄─▀██▀▄─██▄─▄▄▀█▄─▄▄─█▄─▄▄─█─▄▄─█─▄▄─█─▄─▄─███▄─▄█─▄▄─█▄─▄▄─█▄─█─▄█
+# ██─▄─▀██─▀─███─▄─▄██─▄█▀██─▄███─██─█─██─███─███─▄█─██─██─██─▄█▀██▄─▄██
+# █▄▄▄▄██▄▄█▄▄█▄▄█▄▄█▄▄▄▄▄█▄▄▄███▄▄▄▄█▄▄▄▄██▄▄▄██▄▄▄███▄▄▄▄█▄▄▄▄▄██▄▄▄██
+# █████████████████████████████████ contrib_writer\contrib_writer.py ███
+
+# © BarefootJoey
+
 from __future__ import annotations
 
 import argparse
 import datetime as dt
 import os
-from typing import Dict, List, Sequence, Set, Tuple
+from typing import Dict, List, Sequence, Tuple
 
 import structlog
 from pydantic import BaseModel, Field, field_validator
@@ -40,177 +48,7 @@ class Settings(BaseModel):
             raise ValueError("start_sunday must be YYYY-MM-DD") from exc
         return value
 
-
-# 5x7 font for required letters. Each entry is 7 strings of length 5 (rows top->bottom).
-FONT_5x7: Dict[str, List[str]] = {
-    "A": [
-        "01110",
-        "10001",
-        "10001",
-        "11111",
-        "10001",
-        "10001",
-        "10001",
-    ],
-    "B": [
-        "11110",
-        "10001",
-        "10001",
-        "11110",
-        "10001",
-        "10001",
-        "11110",
-    ],
-    "E": [
-        "11111",
-        "10000",
-        "10000",
-        "11110",
-        "10000",
-        "10000",
-        "11111",
-    ],
-    "F": [
-        "11111",
-        "10000",
-        "10000",
-        "11110",
-        "10000",
-        "10000",
-        "10000",
-    ],
-    "J": [
-        "00111",
-        "00001",
-        "00001",
-        "00001",
-        "10001",
-        "10001",
-        "01110",
-    ],
-    "O": [
-        "01110",
-        "10001",
-        "10001",
-        "10001",
-        "10001",
-        "10001",
-        "01110",
-    ],
-    "R": [
-        "11110",
-        "10001",
-        "10001",
-        "11110",
-        "10100",
-        "10010",
-        "10001",
-    ],
-    "T": [
-        "11111",
-        "00100",
-        "00100",
-        "00100",
-        "00100",
-        "00100",
-        "00100",
-    ],
-    "Y": [
-        "10001",
-        "10001",
-        "01010",
-        "00100",
-        "00100",
-        "00100",
-        "00100",
-    ],
-}
-
-
-# Handcrafted compact 3x7 font for letters used in "BAREFOOTJOEY"
-FONT_3x7: Dict[str, List[str]] = {
-    "A": [
-        "010",
-        "101",
-        "101",
-        "111",
-        "101",
-        "101",
-        "101",
-    ],
-    "B": [
-        "110",
-        "101",
-        "101",
-        "110",
-        "101",
-        "101",
-        "110",
-    ],
-    "E": [
-        "111",
-        "100",
-        "100",
-        "110",
-        "100",
-        "100",
-        "111",
-    ],
-    "F": [
-        "111",
-        "100",
-        "100",
-        "110",
-        "100",
-        "100",
-        "100",
-    ],
-    "J": [
-        "111",
-        "001",
-        "001",
-        "001",
-        "101",
-        "101",
-        "010",
-    ],
-    "O": [
-        "010",
-        "101",
-        "101",
-        "101",
-        "101",
-        "101",
-        "010",
-    ],
-    "R": [
-        "110",
-        "101",
-        "101",
-        "110",
-        "110",
-        "101",
-        "101",
-    ],
-    "T": [
-        "111",
-        "010",
-        "010",
-        "010",
-        "010",
-        "010",
-        "010",
-    ],
-    "Y": [
-        "101",
-        "101",
-        "010",
-        "010",
-        "010",
-        "010",
-        "010",
-    ],
-}
+from contrib_writer.fonts import FONT_5x7, FONT_3x7
 
 
 def nearest_previous_sunday(day: dt.date) -> dt.date:
@@ -263,10 +101,45 @@ def compress_glyph_to_width(glyph: List[str], target_width: int) -> List[str]:
     return compressed
 
 
-def stitch_text_to_columns(text: str, spacing: int, target_width: int | None = None) -> List[List[str]]:
+def compress_glyph_to_height(glyph: List[str], target_height: int) -> List[str]:
+    """Compress a 7-row glyph down to target_height by removing least-dense rows.
+
+    Keeps row order stable; discourages removing first/last rows unless necessary.
+    """
+    if not glyph:
+        return glyph
+    current_height = len(glyph)
+    if target_height >= current_height:
+        return glyph
+
+    rows_idx = list(range(current_height))
+
+    def density(row: int) -> int:
+        return sum(1 for ch in glyph[row] if ch == '1')
+
+    while len(rows_idx) > target_height:
+        scores: List[Tuple[float, int]] = []
+        for idx, r in enumerate(rows_idx):
+            score = float(density(r))
+            if idx == 0 or idx == len(rows_idx) - 1:
+                score += 0.5
+            scores.append((score, idx))
+        _, remove_idx = min(scores, key=lambda t: t[0])
+        del rows_idx[remove_idx]
+
+    return [glyph[r] for r in rows_idx]
+
+
+def stitch_text_to_columns(
+    text: str,
+    spacing: int,
+    target_width: int | None = None,
+    target_height: int | None = None,
+) -> List[List[str]]:
     """Return a 2D glyph canvas as list of 7 rows of N columns (strings of '0'/'1').
 
     We build by concatenating character columns with spacing blank columns of width=spacing.
+    If target_height < 7, glyphs are vertically centered within the 7-row canvas.
     """
     rows: List[List[str]] = [[] for _ in range(7)]
     for index, ch in enumerate(text):
@@ -277,9 +150,18 @@ def stitch_text_to_columns(text: str, spacing: int, target_width: int | None = N
             glyph = FONT_3x7[ch]
         elif target_width is not None and 3 <= target_width < len(glyph[0]):
             glyph = compress_glyph_to_width(glyph, target_width)
-        # append 5 columns
+        # Optionally compress height
+        if target_height is not None and target_height < len(glyph):
+            glyph = compress_glyph_to_height(glyph, target_height)
+
+        glyph_height = len(glyph)
+        glyph_width = len(glyph[0]) if glyph else 0
+        top_offset = max(0, (7 - glyph_height) // 2)
         for r in range(7):
-            rows[r].extend(list(glyph[r]))
+            if 0 <= r - top_offset < glyph_height:
+                rows[r].extend(list(glyph[r - top_offset]))
+            else:
+                rows[r].extend(list("0" * glyph_width))
         # add spacing columns except after last char
         if index != len(text) - 1:
             for r in range(7):
@@ -287,13 +169,19 @@ def stitch_text_to_columns(text: str, spacing: int, target_width: int | None = N
     return rows
 
 
-def schedule_dates_for_text(text: str, start_sunday: dt.date, spacing: int, target_width: int | None = None) -> Dict[dt.date, Tuple[int, int]]:
+def schedule_dates_for_text(
+    text: str,
+    start_sunday: dt.date,
+    spacing: int,
+    target_width: int | None = None,
+    target_height: int | None = None,
+) -> Dict[dt.date, Tuple[int, int]]:
     """Compute mapping of date -> (week_column, weekday_row) where a pixel should be on.
 
     - week_column advances left-to-right over time: each column is one week.
     - weekday_row is 0..6 matching Sunday..Saturday.
     """
-    canvas_rows = stitch_text_to_columns(text, spacing, target_width=target_width)
+    canvas_rows = stitch_text_to_columns(text, spacing, target_width=target_width, target_height=target_height)
     dates: Dict[dt.date, Tuple[int, int]] = {}
     num_columns = len(canvas_rows[0]) if canvas_rows else 0
     for c in range(num_columns):
@@ -321,8 +209,15 @@ def append_if_missing(path: str, line: str) -> bool:
     return True
 
 
-def render_ascii_preview(text: str, start_sunday: dt.date, spacing: int, target_width: int | None = None, max_weeks: int | None = 52) -> str:
-    canvas_rows = stitch_text_to_columns(text, spacing, target_width=target_width)
+def render_ascii_preview(
+    text: str,
+    start_sunday: dt.date,
+    spacing: int,
+    target_width: int | None = None,
+    target_height: int | None = None,
+    max_weeks: int | None = 52,
+) -> str:
+    canvas_rows = stitch_text_to_columns(text, spacing, target_width=target_width, target_height=target_height)
     # rows are 7 tall; columns wide; map '1' to '█' and '0' to '·'
     lines: List[str] = []
     if max_weeks is not None:
@@ -344,18 +239,32 @@ def run(
     preview: bool = False,
     list_dates: bool = False,
     font_width: int | None = None,
+    font_height: int | None = None,
     preview_weeks: int | None = 52,
     mutation_token: str | None = None,
 ) -> int:
     structlog.configure(processors=[structlog.processors.add_log_level, structlog.processors.TimeStamper(fmt="iso"), structlog.processors.JSONRenderer()])
     start = get_start_sunday(settings)
     today = dt.date.today()
-    mapping = schedule_dates_for_text(settings.text, start, settings.spacing_columns, target_width=font_width)
+    mapping = schedule_dates_for_text(
+        settings.text,
+        start,
+        settings.spacing_columns,
+        target_width=font_width,
+        target_height=font_height,
+    )
     pixel = mapping.get(today)
     logger.info("schedule_generated", total_pixels=len(mapping), start_sunday=str(start), today=str(today))
 
     if preview:
-        ascii_art = render_ascii_preview(settings.text, start, settings.spacing_columns, target_width=font_width, max_weeks=preview_weeks)
+        ascii_art = render_ascii_preview(
+            settings.text,
+            start,
+            settings.spacing_columns,
+            target_width=font_width,
+            target_height=font_height,
+            max_weeks=preview_weeks,
+        )
         print(ascii_art)
         if list_dates:
             ordered = sorted(mapping.items(), key=lambda kv: kv[0])
@@ -391,6 +300,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--preview", action="store_true", help="Show ASCII preview and exit")
     parser.add_argument("--list-dates", action="store_true", help="When previewing, list all scheduled dates")
     parser.add_argument("--font-width", type=int, choices=[3, 4, 5], default=os.getenv("FONT_WIDTH", None), help="Compress glyphs to given width (default 5)")
+    parser.add_argument("--font-height", type=int, choices=[5, 7], default=os.getenv("FONT_HEIGHT", None), help="Compress glyphs to given height (default 7)")
     parser.add_argument("--preview-weeks", type=int, default=int(os.getenv("PREVIEW_WEEKS", 52)), help="Limit preview to this many week columns (default 52)")
     parser.add_argument("--fit-weeks", type=int, default=os.getenv("FIT_WEEKS", None), help="Auto-compute font width to fit total weeks (uses spacing)")
     parser.add_argument("--mutation-token", default=os.getenv("MUTATION_TOKEN", None), help="Extra unique token to ensure file changes per commit")
@@ -419,6 +329,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         preview=bool(args.preview),
         list_dates=bool(args.list_dates),
         font_width=font_width,
+        font_height=int(args.font_height) if args.font_height else None,
         preview_weeks=int(args.preview_weeks) if args.preview_weeks else None,
         mutation_token=args.mutation_token,
     )

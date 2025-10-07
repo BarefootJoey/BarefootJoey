@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://github.com/barefootjoey" target="_blank">
-    <img src="BarefootJoeyBanner2.jpg" alt="Banner Constructor" width="800" />
+    <img src="BarefootJoeyBanner.jpg" alt="Banner Constructor" width="800" />
   </a>
 </p>
 
