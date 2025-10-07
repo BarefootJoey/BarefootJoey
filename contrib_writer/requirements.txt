@@ -1,0 +1,7 @@
+# Dependencies for contrib_writer
+# Pin with compatible ranges; verify with scripts/check-licenses.ps1
+
+pydantic>=2.7,<3  # License: MIT
+structlog>=24.0,<25  # License: Apache-2.0
+
+
