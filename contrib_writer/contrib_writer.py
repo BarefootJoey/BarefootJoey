@@ -13,6 +13,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import os
+import sys
 from typing import Dict, List, Sequence, Tuple
 
 import structlog
@@ -50,7 +51,17 @@ class Settings(BaseModel):
             raise ValueError("start_sunday must be YYYY-MM-DD") from exc
         return value
 
-from contrib_writer.fonts import FONT_5x7, FONT_3x7
+# Support running both as a package module and as a standalone script
+try:
+    from contrib_writer.fonts import FONT_5x7, FONT_3x7, FONT_3x5  # type: ignore
+except Exception:
+    # When executed as a script (e.g., `python contrib_writer/contrib_writer.py`),
+    # Python sets this module name to 'contrib_writer' which shadows the package.
+    # Fallback to importing sibling module directly by adding current dir to sys.path.
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    if current_dir not in sys.path:
+        sys.path.insert(0, current_dir)
+    from fonts import FONT_5x7, FONT_3x7, FONT_3x5  # type: ignore
 
 
 def nearest_previous_sunday(day: dt.date) -> dt.date:
@@ -148,7 +159,9 @@ def stitch_text_to_columns(
         if ch not in FONT_5x7:
             raise ValueError(f"Unsupported character in font: {ch}")
         glyph = FONT_5x7[ch]
-        if target_width == 3 and ch in FONT_3x7:
+        if target_width == 3 and target_height == 5 and ch in FONT_3x5:
+            glyph = FONT_3x5[ch]
+        elif target_width == 3 and ch in FONT_3x7:
             glyph = FONT_3x7[ch]
         elif target_width is not None and 3 <= target_width < len(glyph[0]):
             glyph = compress_glyph_to_width(glyph, target_width)
