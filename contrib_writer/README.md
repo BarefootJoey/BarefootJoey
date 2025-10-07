@@ -24,7 +24,7 @@ Plan and render text on your GitHub contributions graph by creating commits only
 
 💻 CLI Usage
 ```powershell
-(venv) python contrib_writer/contrib_writer.py [--preview] [--list-dates] [--text TEXT] [--start-sunday YYYY-MM-DD] [--spacing N] [--font-width 3|4|5] [--font-height 5|7] [--fit-weeks N] [--preview-weeks N] [--commit-file PATH] [--mutation-token TOKEN]
+python contrib_writer/contrib_writer.py [--preview] [--list-dates] [--text TEXT] [--start-sunday YYYY-MM-DD] [--spacing N] [--font-width 3|4|5] [--font-height 5|7] [--fit-weeks N] [--preview-weeks N] [--commit-file PATH] [--mutation-token TOKEN]
 ```
 
 🔑 Key options
@@ -46,7 +46,7 @@ Plan and render text on your GitHub contributions graph by creating commits only
 👀 Preview examples
 - 52-week preview, width auto-fit:
 ```powershell
-(venv) python contrib_writer/contrib_writer.py --preview --fit-weeks 52 --preview-weeks 52 --text "GITHUB" --spacing 1 --start-sunday 2025-10-05
+python contrib_writer/contrib_writer.py --preview --fit-weeks 52 --preview-weeks 52 --text "GITHUB" --spacing 1 --start-sunday 2025-10-05
 
 # Example Output:
 {"total_pixels": 91, "start_sunday": "2025-10-05", "today": "2025-10-06", "event": "schedule_generated", "level": "info", "timestamp": "2025-10-06T21:13:12.668510Z"}
@@ -61,7 +61,7 @@ Start Sunday: 2025-10-05  Weeks: 35  Height: 7
 ```
 - 52-week preview, force 3-column glyphs:
 ```powershell
-(venv) python contrib_writer/contrib_writer.py --preview --preview-weeks 52 --font-width 3 --text "BAREFOOTJOEY" --spacing 1 --start-sunday 2025-10-05
+python contrib_writer/contrib_writer.py --preview --preview-weeks 52 --font-width 3 --text "BAREFOOTJOEY" --spacing 1 --start-sunday 2025-10-05
 
 # Example Output:
 {"total_pixels": 141, "start_sunday": "2025-10-05", "today": "2025-10-06", "event": "schedule_generated", "level": "info", "timestamp": "2025-10-06T20:19:49.712836Z"}
@@ -76,7 +76,7 @@ Start Sunday: 2025-10-05  Weeks: 47  Height: 7
 ```
 - 3x5 glyphs (width=3, height=5), vertically centered:
 ```powershell
-(venv) python contrib_writer/contrib_writer.py --preview --preview-weeks 52 --font-width 3 --font-height 5 --text "CONTRIBUTIONS" --spacing 1 --start-sunday 2025-10-05
+python contrib_writer/contrib_writer.py --preview --preview-weeks 52 --font-width 3 --font-height 5 --text "CONTRIBUTIONS" --spacing 1 --start-sunday 2025-10-05
 
 # Example Output: 
 {"total_pixels": 119, "start_sunday": "2025-10-05", "today": "2025-10-07", "event": "schedule_generated", "level": "info", "timestamp": "2025-10-07T16:29:17.391146Z"}
@@ -91,7 +91,7 @@ Start Sunday: 2025-10-05  Weeks: 51  Height: 7
 ```
 - List all dates alongside the preview:
 ```powershell
-(venv) python contrib_writer/contrib_writer.py --preview --list-dates --preview-weeks 52 --font-width 3 --text "README" --spacing 1 --start-sunday 2025-10-05
+python contrib_writer/contrib_writer.py --preview --list-dates --preview-weeks 52 --font-width 3 --text "README" --spacing 1 --start-sunday 2025-10-05
 
 # Example Output: 
 {"total_pixels": 82, "start_sunday": "2025-10-05", "today": "2025-10-06", "event": "schedule_generated", "level": "info", "timestamp": "2025-10-06T21:18:58.732853Z"}
