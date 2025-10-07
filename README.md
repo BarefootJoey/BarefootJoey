@@ -21,14 +21,14 @@
 [![Twitter](https://img.shields.io/badge/Twitter-%40barefootjoey-black?style=flat&logo=X&logoColor=white)](https://x.com/BarefootJoeyTV)
 [![Kaggle](https://img.shields.io/badge/Kaggle-%40barefootjoey-0ba7e9?style=flat&logo=Kaggle&logoColor=white)](https://www.kaggle.com/barefootjoey)
 [![TradingView](https://img.shields.io/badge/TradingView-%40barefootjoey-black?style=flat&logo=TradingView&logoColor=white)](https://www.tradingview.com/u/BarefootJoey/#published-scripts)
-[![Donate](https://img.shields.io/badge/Support-$barefootjoey-brighgreen.svg?style=flat&logo=CashApp&logoColor=white)](https://cash.app/$barefootjoey)
+[![Donate](https://img.shields.io/badge/Support-$barefootjoey-brightgreen.svg?style=flat&logo=CashApp&logoColor=white)](https://cash.app/$barefootjoey)
 [![wakatime](https://wakatime.com/badge/user/f55f2e09-e077-4371-a583-8d76367b844d.svg?color=000000)](https://wakatime.com/@f55f2e09-e077-4371-a583-8d76367b844d)
 
 <p align="center">
   <!-- Styles=flat-square, flat, for-the-badge, -->
   <img src="https://img.shields.io/badge/License-Apache%202.0-purple.svg" />
-  <img src="https://komarev.com/ghpvc/?username=BarefootJoey&color=green" alt="BarefootJoey" />
-  <img src="https://img.shields.io/github/stars/BarefootJoey/BarefootJoey?style=flat&color=yellow" />
+  <img src="https://komarev.com/ghpvc/?username=BarefootJoey&color=brightgreen" alt="BarefootJoey" />
+  <img src="https://img.shields.io/github/stars/BarefootJoey/BarefootJoey?style=flat&color=gold" />
   <img src="https://img.shields.io/github/forks/BarefootJoey/BarefootJoey?style=flat" />
   <img src="https://img.shields.io/github/issues/BarefootJoey/BarefootJoey?style=flat&color=orange" />
 </p>
