@@ -30,7 +30,7 @@
   <img src="https://komarev.com/ghpvc/?username=BarefootJoey&color=brightgreen" alt="BarefootJoey" />
   <img src="https://img.shields.io/github/stars/BarefootJoey/BarefootJoey?style=flat&color=gold" />
   <img src="https://img.shields.io/github/forks/BarefootJoey/BarefootJoey?style=flat" />
-  <img src="https://img.shields.io/github/issues/BarefootJoey/BarefootJoey?style=flat&color=orange" />
+  <img src="https://img.shields.io/github/issues/BarefootJoey/BarefootJoey?style=flat&color=red" />
 </p>
 
 <a href = "https://github.com/BarefootJoey/BarefootJoey/graphs/contributors">
