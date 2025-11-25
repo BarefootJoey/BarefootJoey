@@ -19,6 +19,7 @@
 [![Web](https://img.shields.io/badge/Website-barefootjoey.com-black?style=flat&logo=GoogleChrome&logoColor=white)](https://barefootjoey.com)
 [![Telegram](https://img.shields.io/badge/Telegram-%40barefootjoey-black?style=flat&logo=Telegram&logoColor=white)](https://t.me/barefootjoey)
 [![Twitter](https://img.shields.io/badge/Twitter-%40barefootjoey-black?style=flat&logo=X&logoColor=white)](https://x.com/BarefootJoeyTV)
+
 [![Kaggle](https://img.shields.io/badge/Kaggle-%40barefootjoey-black?style=flat&logo=Kaggle&logoColor=white)](https://www.kaggle.com/barefootjoey)
 [![TradingView](https://img.shields.io/badge/TradingView-%40barefootjoey-black?style=flat&logo=TradingView&logoColor=white)](https://www.tradingview.com/u/BarefootJoey/#published-scripts)
 [![wakatime](https://wakatime.com/badge/user/f55f2e09-e077-4371-a583-8d76367b844d.svg?color=000000)](https://wakatime.com/@f55f2e09-e077-4371-a583-8d76367b844d)
