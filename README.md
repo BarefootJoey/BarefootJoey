@@ -153,10 +153,10 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-## Verification
+<!-- ## Verification
 
 Run repository checks locally:
 ```bash
 bash scripts/check.sh
 ```
-Pull requests automatically run the "Repo checks" GitHub Action.
+Pull requests automatically run the "Repo checks" GitHub Action. -->
