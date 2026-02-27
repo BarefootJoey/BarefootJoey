@@ -41,7 +41,7 @@ jobs:
           SPACING_COLUMNS: '1'
           FONT_WIDTH: '3'
           FIT_WEEKS: '52'
-          MULTI_COMMITS: '50'
+          MULTI_COMMITS: '5'
         run: |
           set -euo pipefail
       
