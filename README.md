@@ -40,7 +40,7 @@
 
 <h1 align="center">👋 hello world</h1>
 
-Welcome to my GitHub, where you can find the collection of my open-sourced software projects. Please don't forget to star this repo if you like it, or [fork this repo](FORKING.md) if you want your own similar GitHub profile README.md with [contribution graph text rendering automation](contrib_writer/README.md).
+Welcome to my GitHub, where you can find the collection of my open-sourced software projects. Please don't forget to star this repo if you found the code useful, or [fork this repo](FORKING.md) if you want your own similar GitHub profile README.md with [contribution graph text rendering automation](contrib_writer/README.md).
 
 <!-- Trophy Themes: juicyfresh, nord, 
 Other descriptors: &margin-w=10&column=10 -->
