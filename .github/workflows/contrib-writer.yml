@@ -36,8 +36,8 @@ jobs:
       - name: Run contribution writer
         env:
           TEXT: 'BAREFOOTJOEY'
-          START_SUNDAY: '2025-10-12'
-          COMMIT_FILE: 'contrib_writer/contrib_log.txt'
+          START_SUNDAY: '2026-03-01'
+          COMMIT_FILE: 'contrib_writer/contrib_log_2026-03-01.txt'
           SPACING_COLUMNS: '1'
           FONT_WIDTH: '3'
           FIT_WEEKS: '52'
