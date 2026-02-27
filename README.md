@@ -152,3 +152,11 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+## Verification
+
+Run repository checks locally:
+```bash
+bash scripts/check.sh
+```
+Pull requests automatically run the "Repo checks" GitHub Action.
