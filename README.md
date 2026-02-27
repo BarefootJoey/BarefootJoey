@@ -47,7 +47,7 @@ Other descriptors: &margin-w=10&column=10 -->
 <!--<details><summary>Profile Trophies</summary>
 <img src="https://github-profile-trophy.vercel.app/?username=barefootjoey&theme=juicyfresh&no-bg=true&no-frame=false" />
 </details>-->
-<p align="center"><img src="https://github-profile-trophy.vercel.app/?username=barefootjoey&theme=juicyfresh&no-bg=true&no-frame=false" /></p>
+<!-- <p align="center"><img src="https://github-profile-trophy.vercel.app/?username=barefootjoey&theme=juicyfresh&no-bg=true&no-frame=false" /></p> -->
 
 <!--[![Gmail: YourHandle](https://img.shields.io/badge/Gmail-youremail%40gmail.com-red)](mailto:youremail@gmail.com)
 [![LinkedIn: BarefootJoey](https://img.shields.io/badge/LinkedIn-BarefootJoey-blue)](https://www.linkedin.com/in/barefoot-joey-84355a335/)
@@ -115,8 +115,8 @@ Other descriptors: &margin-w=10&column=10 -->
 <!-- All themes: https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md -->
 <p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=barefootjoey&theme=chartreuse-dark" alt="GitHub Streaks" title="Github Streaks" /></p> <!-- Note: Not rendering occasionally -->
 <!--<p align="center"><img src="https://streak-stats.demolab.com/?user=BarefootJoey&theme=chartreuse-dark" alt="GitHub Streaks" title="GitHub Streaks" /></p>--> <!-- Note: Also not rendering occasionally -->
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api?username=barefootjoey&theme=chartreuse-dark&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" alt="Github Stats" title="Github Stats" /></p>
-<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=barefootjoey&langs_count=10&theme=chartreuse-dark&layout=donut" alt="Github Languages" title="Github Languages" /></p>
+<!--<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api?username=barefootjoey&theme=chartreuse-dark&show=reviews,discussions_started,discussions_answered,prs_merged,prs_merged_percentage" alt="Github Stats" title="Github Stats" /></p>
+<p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=barefootjoey&langs_count=10&theme=chartreuse-dark&layout=donut" alt="Github Languages" title="Github Languages" /></p> -->
 
 <!--<br>
 <table align="center">
