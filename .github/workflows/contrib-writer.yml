@@ -43,24 +43,28 @@ jobs:
           FIT_WEEKS: '52'
           MULTI_COMMITS: '50'
         run: |
-          # First run computes whether today is a pixel day and appends the baseline line if needed
-          python contrib_writer/contrib_writer.py
-          # Intensify by multiple small commits if today is scheduled
+          set -euo pipefail
+      
+          # First run decides whether today is scheduled
+          python contrib_writer/contrib_writer.py 2>&1 | tee /tmp/contrib_writer.out
+      
+          if grep -q '"event": "no_commit_today"' /tmp/contrib_writer.out; then
+            echo "No scheduled pixel today; skipping intensity commits."
+            exit 0
+          fi
+      
+          # Intensify only on scheduled days
           for i in $(seq 1 ${MULTI_COMMITS}); do
             echo "intensity=$i $(date -u +%Y-%m-%dT%H:%M:%SZ)" >> contrib_writer/intensity.txt
             python contrib_writer/contrib_writer.py --mutation-token $i
             git add -A
             git commit -m "🔧 chore: intensity $i" || true
           done
-
-      - name: Commit and push if changed
-        run: |
-          git add -A
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
+      
+          # Push commits even if nothing is staged now
+          git fetch origin main --depth 1 || true
+          if [ "$(git rev-list --count origin/main..HEAD)" != "0" ]; then
+            git push
+          else
+            echo "No new commits to push."
           fi
-          git commit -m "🔧 chore: contribution writer update"
-          git push
-
-
